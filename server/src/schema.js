@@ -1,6 +1,6 @@
-import {
+import { 
   makeExecutableSchema,
-  addMockFunctionsToSchema,
+  addMockFunctionsToSchema
 } from 'graphql-tools';
 
 import { resolvers } from './resolvers';
