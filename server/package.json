@@ -1,7 +1,7 @@
 {
   "name": "graphql-server",
   "version": "1.0.0",
-  "description": "A simple GraphQL server",
+  "description": "A simple GraphQL server for React app",
   "main": "server.js",
   "scripts": {
     "start": "nodemon ./server.js --exec babel-node -e js",
