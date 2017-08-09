@@ -1,0 +1,26 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-client": "^1.9.0",
+    "apollo-test-utils": "^0.3.2",
+    "false": "0.0.4",
+    "graphql": "^0.10.5",
+    "graphql-tools": "^1.1.0",
+    "react": "^15.6.1",
+    "react-apollo": "^1.4.11",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.2",
+    "subscriptions-transport-ws": "^0.8.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.0.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
