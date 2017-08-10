@@ -12,6 +12,8 @@ import {
   toIdValue,
 } from 'react-apollo';
 import { SubscriptionClient, addGraphQLSubscriptions } from 'subscriptions-transport-ws';
+import ws from 'ws';
+// import { SubscriptionClient, addGraphQLSubscriptions } from 'subscriptions-transport-ws/dist/client';
 
 import ChannelsListWithData from './components/ChannelsListWithData';
 import NotFound from './components/NotFound';
@@ -26,8 +28,8 @@ networkInterface.use([{
 }]);
 
 const wsClient = new SubscriptionClient(`ws://localhost:4000/subscriptions`, {
-  reconnect: true
-});
+  reconnect: true,
+}, ws);
 
 const networkInterfaceWithSubscriptions = addGraphQLSubscriptions(
   networkInterface,
