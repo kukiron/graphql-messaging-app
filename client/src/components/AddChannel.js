@@ -12,7 +12,7 @@ const AddChannel = ({ mutate }) => {
           addChannel: {
             name: evt.target.value,
             id: Math.round(Math.random() * -1000000),
-            __typename: 'Channel',
+            __typename: 'Channel'
           },
         },
         update: (store, { data: { addChannel } }) => {
