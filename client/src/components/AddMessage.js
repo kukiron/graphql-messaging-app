@@ -18,7 +18,7 @@ const AddMessage = ({ mutate, match }) => {
           addMessage: {
             text: evt.target.value,
             id: Math.round(Math.random() * -1000000),
-            __typename: 'Message',
+            __typename: 'Message'
           },
         },
         update: (store, { data: { addMessage } }) => {

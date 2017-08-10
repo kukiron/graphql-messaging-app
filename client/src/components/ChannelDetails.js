@@ -10,7 +10,7 @@ class ChannelDetails extends Component {
     this.props.data.subscribeToMore({
       document: messagesSubscription,
       variables: {
-        channelId: this.props.match.params.channelId,
+        channelId: this.props.match.params.channelId
       },
       updateQuery: (prev, {subscriptionData}) => {
         if (!subscriptionData.data) {
@@ -78,6 +78,6 @@ const messagesSubscription = gql`
 
 export default (graphql(channelDetailsQuery, {
   options: (props) => ({
-    variables: { channelId: props.match.params.channelId },
-  }),
+    variables: { channelId: props.match.params.channelId }
+  })
 })(ChannelDetails));
