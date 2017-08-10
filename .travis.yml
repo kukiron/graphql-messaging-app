@@ -15,6 +15,9 @@ addons:
 
 script: cd client && npm install && npm test
 
+after_script:
+  - sleep 10 # helps travis finish logging
+
 after_success:
   - npm install -g codeclimate-test-reporter
   - codeclimate-test-reporter < lcov.info
