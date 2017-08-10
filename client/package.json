@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Error: Run 'make test' instead.\" && exit 1",
+    "test": "echo \"Build for graphql-messaging-app.\" && exit 0",
     "eject": "react-scripts eject"
   },
   "dependencies": {
