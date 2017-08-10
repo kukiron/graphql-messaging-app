@@ -3,7 +3,9 @@ import React from 'react';
 
 import AddMessage from './AddMessage';
 
-const MessageList = ({ messages }) => {
+const MessageList = (props) => {
+  const messages = props.messages;
+
   return (
     <div className="messagesList">
       { messages.map( message =>

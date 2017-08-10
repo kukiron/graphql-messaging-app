@@ -3,11 +3,11 @@
 .*/node_modules/fbjs/.*
 
 [include]
-client/src/*.js
-client/src/components/*.js
+src/*.js
+src/components/*.js
 
 [libs]
-client/flow-typed
+flow-typed
 
 [options]
 esproposal.class_instance_fields=enable
