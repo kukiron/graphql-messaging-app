@@ -10,8 +10,6 @@ engines:
       languages:
         javascript:
           mass_threshold: 50
-  markdownlint:
-    enabled: true
   eslint:
     enabled: true
   fixme:
