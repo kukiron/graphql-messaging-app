@@ -1,4 +1,5 @@
 # graphql-messaging-app
+[![CircleCI](https://circleci.com/gh/kukiron/graphql-messaging-app.svg?style=svg)](https://circleci.com/gh/kukiron/graphql-messaging-app) [![Build Status](https://travis-ci.org/kukiron/graphql-messaging-app.svg?branch=master)](https://travis-ci.org/kukiron/graphql-messaging-app) [![Code Climate](https://codeclimate.com/github/kukiron/graphql-messaging-app/badges/gpa.svg)](https://codeclimate.com/github/kukiron/graphql-messaging-app)
 
 GraphQL messaing/todo app with React, Redux and Apollo
 
