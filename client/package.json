@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Build for graphql-messaging-app.\" && exit 0",
+    "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject"
   },
   "dependencies": {
@@ -22,7 +22,6 @@
     "ws": "^3.1.0"
   },
   "devDependencies": {
-    "flow-bin": "^0.52.0",
     "react-scripts": "^1.0.11"
   }
 }
