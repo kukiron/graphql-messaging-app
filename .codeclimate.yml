@@ -1,4 +1,3 @@
-
 engines:
   csslint:
     enabled: true
@@ -9,35 +8,22 @@ engines:
     enabled: true
     config:
       languages:
-      - ruby
-      - javascript
-          mass_threshold: 20
-      - python
-      - php
+        javascript
+          mass_threshold: 10
+  markdownlint:
+    enabled: true
   eslint:
     enabled: true
   fixme:
     enabled: true
+
 ratings:
   paths:
   - "**.css"
   - "**.inc"
   - "**.js"
   - "**.jsx"
-  - "**.module"
-  - "**.php"
-  - "**.py"
-  - "**.rb"
+  - "**.md"
+
 exclude_paths:
-- spec/**/*
-- "**/vendor/**/*"
-parserOptions:
-  sourceType: module
-  ecmaFeatures:
-    jsx: true
-env:
-  amd: true
-  browser: true
-  es6: true
-  jquery: true
-  node: true
+- "spec/app/**/*"
