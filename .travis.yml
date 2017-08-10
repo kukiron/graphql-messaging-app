@@ -15,9 +15,7 @@ addons:
 
 script:
   - cd client && npm install && npm test -- --coverage
-
-after_script:
-  - sleep 10 # helps travis finish logging
+  - ssh-agent -k
 
 after_success:
   - npm install -g codeclimate-test-reporter
