@@ -14,7 +14,7 @@ addons:
     repo_token: 4ad3e12283a16e2adf2b673cf3c3d3fd211af822b86105bd768136c72bf16eb1
 
 script:
-  - cd client && npm install && npm test
+  - cd client && npm install && npm test -- --coverage
 
 after_script:
   - sleep 10 # helps travis finish logging
