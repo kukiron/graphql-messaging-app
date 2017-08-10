@@ -1,3 +1,5 @@
+general:
+  build_dir: client
 machine:
   node:
     version: 6.0.0
