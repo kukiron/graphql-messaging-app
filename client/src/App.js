@@ -3,13 +3,13 @@ import {
   BrowserRouter,
   Link,
   Route,
-  Switch,
+  Switch
 } from 'react-router-dom';
 import {
   ApolloClient,
   ApolloProvider,
   createNetworkInterface,
-  toIdValue,
+  toIdValue
 } from 'react-apollo';
 import { SubscriptionClient, addGraphQLSubscriptions } from 'subscriptions-transport-ws';
 import ws from 'ws';
@@ -24,11 +24,11 @@ const networkInterface = createNetworkInterface({ uri: 'http://localhost:4000/gr
 networkInterface.use([{
   applyMiddleware(req, next) {
     setTimeout(next, 500);
-  },
+  }
 }]);
 
 const wsClient = new SubscriptionClient(`ws://localhost:4000/subscriptions`, {
-  reconnect: true,
+  reconnect: true
 }, ws);
 
 const networkInterfaceWithSubscriptions = addGraphQLSubscriptions(
@@ -51,10 +51,10 @@ const client = new ApolloClient({
     Query: {
       channel: (_, args) => {
         return toIdValue(dataIdFromObject({ __typename: 'Channel', id: args['id'] }))
-      },
-    },
+      }
+    }
   },
-  dataIdFromObject,
+  dataIdFromObject
 });
 
 class App extends Component {
