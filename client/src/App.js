@@ -64,6 +64,7 @@ class App extends Component {
         <BrowserRouter>
           <div className="App">
             <Link to="/" className="navbar">React + GraphQL App</Link>
+            <h4>Add messages to the box</h4>
             <Switch>
               <Route exact path="/" component={ChannelsListWithData}/>
               <Route path="/channel/:channelId" component={ChannelDetails}/>
