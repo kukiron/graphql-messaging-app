@@ -5,6 +5,7 @@ node_js:
 cache:
   directories:
     - client/node_modules
-script:
-  - cd client && npm install && npm test
+script: cd client && npm install && npm test
+after_script:
+  - eval "$(ssh-agent -s)"
   - ssh-agent -k
