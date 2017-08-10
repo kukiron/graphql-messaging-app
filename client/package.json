@@ -5,7 +5,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --coverage",
+    // "test": "react-scripts test --env=jsdom --coverage",
+    "test": "echo \"Error: Run 'make test' instead.\" && exit 1",
     "eject": "react-scripts eject"
   },
   "dependencies": {

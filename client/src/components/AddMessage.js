@@ -1,4 +1,3 @@
-/* @flow */
 import React from 'react';
 import { gql, graphql } from 'react-apollo';
 

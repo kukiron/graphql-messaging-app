@@ -13,9 +13,9 @@ addons:
   code_climate:
     repo_token: 4ad3e12283a16e2adf2b673cf3c3d3fd211af822b86105bd768136c72bf16eb1
 
-before_script: cd client && npm install
+# before_script: cd client && npm install
 
-script: flow
+script: make test
 
 after_success:
   - npm install -g codeclimate-test-reporter

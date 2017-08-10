@@ -1,4 +1,3 @@
-/* @flow */
 export const typeDefs = `
 
 type Channel {
