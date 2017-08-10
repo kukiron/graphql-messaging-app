@@ -7,5 +7,8 @@ cache:
     - client/node_modules
 script: cd client && npm install && npm test -- --coverage
 after_script:
-    # killing background process
-  - killall -9
+  # - ps aux
+  - killall -9 php
+  - killall -9 java
+  - killall -9 Xvfb
+  # - ps aux
