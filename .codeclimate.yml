@@ -8,7 +8,8 @@ engines:
     enabled: true
     config:
       languages:
-        javascript
+        javascript:
+          mass_threshold: 50
   markdownlint:
     enabled: true
   eslint:
@@ -22,7 +23,6 @@ ratings:
   - "**.inc"
   - "**.js"
   - "**.jsx"
-  - "**.md"
 
 exclude_paths:
 - "spec/app/**/*"
