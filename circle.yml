@@ -5,7 +5,7 @@ machine:
     version: 6.0.0
 test:
   override:
-    - ./client/src/App.test.js:
+    - ./src/App.test.js:
         timeout: 1200
     - npm test
   post:
